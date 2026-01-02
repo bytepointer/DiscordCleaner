@@ -5,7 +5,6 @@ let read = (channelId) => {
     if(!channelId) return [];
 
     if(fs.existsSync(`channels/${channelId}.txt`)) {
-         console.log("a")
          return JSON.parse(fs.readFileSync(`channels/${channelId}.txt`, 'utf8'))
     } else {
         return [];

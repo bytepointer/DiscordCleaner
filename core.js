@@ -10,9 +10,6 @@ class core {
 
         this.token = values.token;
         this.target = values.target;
-
-        console.error(values.type);
-
         this.type = values.type;
         this.properties = values.properties;
 

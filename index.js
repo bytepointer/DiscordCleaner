@@ -26,10 +26,7 @@ async function execute(softCore) {
 
     let messages = read(target);
 
-    console.log(messages)
-    console.log("Oie")
     if(messages.length == 0) {
-        console.log("algo maior!")
         messages = await softCore.getMessages()
         if(saveMessages) write(target, messages);
     }
@@ -90,7 +87,6 @@ async function callbackPrompt(promptType, res) {
             if(Object.keys(typeConvertion).includes(res)) {
 
                 type = typeConvertion[res];
-                console.log(type);
                 await prompt("channel")
             } else {
                 await prompt("type")

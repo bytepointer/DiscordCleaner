@@ -82,7 +82,7 @@ let request = async(path, params) => {
     }
 
     if(requ.status == 404) {
-        return error("Servidor ou tipo inválido!");
+        return error("Identificador de guilda/dm ou tipo inválido!");
     }
 
     if(requ.status == 200 || requ.status == 429 || requ.stauts == 204) {

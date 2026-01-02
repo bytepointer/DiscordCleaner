@@ -2,7 +2,6 @@
 
 let sleep = async(ms) => {
 
-    console.log(ms)
     const start = Date.now();
 
     while(Date.now() - start < ms) {
