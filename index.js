@@ -40,6 +40,8 @@ async function execute(softCore) {
 
         await softCore.deleteMessages(msg.id, msg.channel)
     }
+
+    console.log(`Um total de ${messages.length} foram apagadas!`)
 }
 
 async function deleteAll() {
